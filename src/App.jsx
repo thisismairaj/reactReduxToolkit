@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux"
 const App = () => {
   const dispatch = useDispatch()
   const { value } = useSelector((state) => state.custom)
+  console.log(value)
 
   const addBtn = () => {
     dispatch({ type: "increment" })
